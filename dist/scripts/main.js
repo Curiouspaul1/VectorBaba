@@ -28,13 +28,15 @@ for(let i = 0; i < navs.length; i++){
 
 const carousel = document.querySelector('.carousel-slide');
 const images = document.querySelectorAll('.carousel-slide img');
+console.log(images);
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
-/*//counter
+//counter
 let count = 1;
 const size = images[0].clientWidth;
-//carousel.style.transform = 'translateX(' + (-size * count) + 'px)';
+console.log(size);
+carousel.style.transform = 'translateX(' + (-size * count) + 'px)';
 
 //buttons
 nextBtn.addEventListener('click',()=>{
@@ -55,4 +57,9 @@ carousel.addEventListener('transitionend',()=>{
     count = images.length - 2;
     carousel.style.transform = 'translateX(' + (-size * count) + 'px)';
   }
-});*/
+  if(images[count].id === 'firstClone'){
+    carousel.style.transition = 'none';
+    count = images.length - count;
+    carousel.style.transform = 'translateX(' + (-size * count) + 'px)';
+  }
+});
