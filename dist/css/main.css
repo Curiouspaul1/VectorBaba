@@ -176,3 +176,31 @@ body {
     font-weight: 100;
     margin-top: 8%;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background:#111;
+    color:#fff;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer img{
+    height: 30px;
+    width:30px;
+    margin-bottom: 5px;
+}
+
+.footer small {
+    margin-top:-15%;
+}
