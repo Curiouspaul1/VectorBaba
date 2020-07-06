@@ -144,21 +144,35 @@ body {
     border:none;
     color:#fff;
     font-weight: 100;
+    margin-bottom: 5%;
 }
 
 #section2 {
     display: flex;
     justify-content: center;
+    background: #f4f4f4;
 }
 
-.form {
-    background: #f4f4f4;
-    padding:0 20%;
-    border-radius: 20px;
+.upload-form img{
+    width: 50px;
+    height  : 50px;
 }
 
 .form form {
-    border: dashed #555 1px;
-    padding:0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-radius: 15px;
+}
+
+.form input::-webkit-file-upload-button {
+    padding:10px 20px;
+    font-size: 20px;
+    background-color: #2176AE;
+    border:none;
+    border-radius: 30px;
+    color:#fff;
+    font-weight: 100;
+    margin-top: 8%;
 }
