@@ -275,3 +275,19 @@ footer {
     justify-content: center;
     padding:20px;
 }
+
+
+@media (max-width: 940px) {
+    .header {
+        display:none;
+    }
+    .how-it-works {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    #how-it-works h1{
+        width: 80%;
+    }
+}
