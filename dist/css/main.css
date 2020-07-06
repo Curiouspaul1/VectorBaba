@@ -230,8 +230,8 @@ body {
 
 .copyright {
     font-size: 20px;
-    margin-left:70%;
     display: flex;
+    color:#fff;
 }
 
 .copyright span {
@@ -248,7 +248,30 @@ body {
     grid-template-columns:repeat(2,1fr);
 }
 
+.contact h1 {
+    font-size: xx-large;
+}
+
 .contact-container a {
     text-decoration: none;
     color:#000;
+    font-size:20px;
+}
+
+.contact-container div {
+    margin-bottom: 20px;
+    padding:20px;
+}
+
+.contact-container img {
+    width:30px;
+    height:30px;
+    margin-bottom: -10px;
+}
+
+footer {
+    background-color: #02153d;
+    display:flex;
+    justify-content: center;
+    padding:20px;
 }
