@@ -201,12 +201,10 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
-    background-image: url('../img/cool-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #FFCA3A;
 }
 
-.upload-field{
+/*.upload-field{
     padding:20px 26px;
     width: 60vw;
     background:#f4f4f4;
@@ -255,6 +253,13 @@ body {
     background-color: #02153d;
     color:#fff;
     cursor: pointer;
+}*/
+
+#section2 iframe {
+    margin-top:5%;
+    width:80%;
+    height: 50rem;
+    background-color: transparent
 }
 
 .copyright {
@@ -311,10 +316,13 @@ footer {
 }
 
 #pricing {
-    background-color: #FFCA3A;
+    background-image: url('../img/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 100vw;
     overflow: hidden;
     color:#3a0707;
+    padding:0;
 }
 
 .pricing-content {
@@ -367,6 +375,13 @@ footer {
         padding: 0;
         position: relative;
         top:-15rem;
+    }
+
+    #section2 iframe {
+        margin-top:5%;
+        width:80%;
+        height: 30rem;
+        background-color: transparent
     }
 
     .contact-container {
