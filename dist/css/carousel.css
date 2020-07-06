@@ -1,0 +1,15 @@
+.carousel-container {
+  width: 60%;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  border:5px solid black;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.carousel-slide img{
+}

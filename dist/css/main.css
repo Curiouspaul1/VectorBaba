@@ -12,6 +12,7 @@ body {
     font-family: 'Open Sans',sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #111;
     /*background-color: #f7f8fc;*/
 }
 
@@ -19,7 +20,7 @@ body {
 
 .header {
     /*background-color:#000500;*/
-    background: #02153d;
+    background: #FFCA3A;
     /*background: linear-gradient(180deg, rgba(40,104,240,1) 0%, rgba(172,195,245,0.9808298319327731) 100%);*/
     color:#fff;
     overflow: hidden;
@@ -109,6 +110,7 @@ body {
 #section1 {
     width: 80%;
     margin:0 auto;
+    color:#fff;
 }
 
 .how-it-works {
@@ -122,8 +124,9 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px #ffffff15;
     padding: 15px;
+    background-color: #fff;
 }
 
 .how p {
