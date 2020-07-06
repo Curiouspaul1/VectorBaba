@@ -1,5 +1,4 @@
 .carousel-container {
-  width: 47%;
   margin:0 auto;
   overflow: hidden;
 }
@@ -8,8 +7,55 @@
   display: flex;
   border:5px solid rgb(255, 255, 255);
   width:100%;
+
 }
 
 .carousel-slide img{
   margin: 0;
+}
+
+#prevBtn,#nextBtn{
+  background: none;
+  border:none;
+}
+
+#prevBtn {
+  position: relative;
+  left: 20rem;
+}
+
+#nextBtn{
+  position: relative;
+  left: 60rem;
+}
+
+.controls {
+  width:vw;
+  overflow: hidden;
+  position: relative;
+  top:-15rem;
+}
+
+#prevBtn img,#nextBtn img{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width:50px;
+  height: 50px;
+}
+
+#slide-header {
+  color:#FFCA3A;
+  font-size: 3rem;
+}
+
+@media (max-width: 940px){
+  #prevBtn {
+    position: relative;
+    left: 8rem;
+  }
+  
+  #nextBtn{
+    position: relative;
+    left: 31rem;
+  }
 }

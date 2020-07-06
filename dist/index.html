@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -14,25 +14,40 @@
         <div class="header">
             <div class="navbar">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
-                    <h3>VectorBaba</h3>
+                    <h2>VectorBaba</h2>
                 </div>
                 <ul class="nav">
                     <li class="nav-item"><a href="#section1">How it Works</a></li>
-                    <li class="nav-item"><a href="#section2">Upload File</a></li>
+                    <li class="nav-item"><a href="#section2">Get A Quote</a></li>
                     <li class="nav-item"><a href="#section3">Contact Us</a></li>
+                    <li class="nav-item"><a href="" id="section4">Pricing</a></li>
                 </ul>
             </div>
 
             <div class="major-text">
-                <h1>Create Quality <br> Vectorized Images</h1>
-                <p>
-                    VectorBaba gives you the best quality of vectorization and cartooning, you could possibly imagine. Customizations at your fingertips.
-                </p>
+                <div class="desc">
+                    <h1>Create Quality <br> Vectorized Images</h1>
+                    <p>
+                        VectorBaba gives you the best quality of vectorization and cartooning, you could possibly imagine. Customizations at your fingertips.
+                    </p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="img/Portfolio template5-01.jpg" alt="" id="lastClone">
+                        <img src="img/Portfolio template5-01.jpg" alt="">
+                        <img src="img/Portfolio template5-01.jpg" alt="">
+                        <img src="img/Portfolio template5-01.jpg" alt="">
+                        <img src="img/Portfolio template5-01.jpg" alt="" id="firstClone">
+                        <div class="controls">
+                            <button id="prevBtn"><img src="img/caret-back-circle-outline.svg" alt="" srcset=""></button>
+                            <button id="nextBtn"><img src="img/caret-forward-circle-outline.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main-img">
+            <!--<div class="main-img">
                 <img src="img/Asset 140.png" alt="">
-            </div>
+            </div>-->
         </div>
 
         <div class="mobile-header">
@@ -54,6 +69,10 @@
             </ul>
             <div class="footer">Icons By <a href="">ICons8.com</a></div>
         </div>
+        <!-- SlidesShoq-->
+        <section id="slideshow">
+            
+        </section>
         <!-- How it works -->
         <section id="section1">
             <div id="how-it-works"><h1>How it Works</h1></div>
@@ -83,26 +102,18 @@
                 </div>
             </div>
             <div class="call-to-action">
-                <a href="#section2"><button onclick="">Get Started</button></a>
+                <a href="#section2"><button onclick="">Get Your Quote</button></a>
             </div>
         </section>
-        <!-- SlidesShoq-->
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="img/Portfolio template5-01.jpg" alt="" id="lastClone">
-                <img src="img/Portfolio template5-01.jpg" alt="">
-                <img src="img/Portfolio template5-01.jpg" alt="">
-                <img src="img/Portfolio template5-01.jpg" alt="">
-                <img src="img/Portfolio template5-01.jpg" alt="" id="firstClone">
-            </div>
-        </div>
-        <button id="prevBtn"></button>
-        <button id="nextBtn"></button>
+        
         <section id="section2">
             <div class="form">
+                <div class="main-text"><h1>Upload your Image</h1></div>
                 <form action="" class="upload-form">
-                    <div class="main-text"><h1>Upload your Image</h1></div>
-                    <img src="img/upload-64.png" alt="">
+                    <input type="text" placeholder="First Name" class="upload-field">
+                    <input type="text" placeholder="Last Name" class="upload-field">
+                    <input type="text" placeholder="Email Address" class="upload-field">
+                    <!--<img src="img/upload-64.png" alt="">-->
                     <input type="file" name="upload" id="" id="upload-field">
                     <input type="submit" class="submit-btn">
                 </form>

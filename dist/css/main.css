@@ -19,12 +19,11 @@ body {
                                     
 
 .header {
-    /*background-color:#000500;*/
     background: #FFCA3A;
     /*background: linear-gradient(180deg, rgba(40,104,240,1) 0%, rgba(172,195,245,0.9808298319327731) 100%);*/
     color:#fff;
     overflow: hidden;
-    height: 400px;
+    height:auto;
 }
 
 .header-img {
@@ -34,7 +33,7 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    gap:20%;
+    gap:10%;
     font-size: 14px;
     box-sizing: border-box;
     margin-top:2%;
@@ -72,20 +71,28 @@ body {
 }
 
 .major-text {
-    width: 80%;
+    width: 90%;
     margin:0 auto;
+    display: grid;
+    gap:15%;
+    grid-template-columns: 30% 70%;
 }
 
 .major-text h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3rem;
+    width: 120%;
+}
+
+.desc {
+    width: 100%;
 }
 
 .major-text p {
     font-weight: 100;
     color: #f4f4f4;
-    font-size: 20px;
-    width: 50%;
+    font-size: 25px;
+    width: 120%;
 }
 
 .logo {
@@ -97,6 +104,11 @@ body {
     width: 50px;
     height: 50px;
 }
+
+.logo h2 {
+    margin:0 0 0 20px;
+}
+
 .t {
     color:#3f3d56
 }
@@ -184,13 +196,23 @@ body {
 #section2 {
     display: flex;
     justify-content: center;
-    background: #f4f4f4;
     padding-bottom: 100px;
+    background-image: url('../img/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.upload-form img{
-    width: 50px;
-    height  : 50px;
+.upload-field{
+    padding:15px 20px;
+    width: 40vw;
+    background:#f4f4f4;
+    margin:0 0 5% 0;
+    border-radius: 10px;
+    border:none;
+}
+
+.upload-field::placeholder{
+    font-size:18px;
 }
 
 .form form {
@@ -219,7 +241,7 @@ body {
 .submit-btn {
     padding:10px 20px;
     font-size: 20px;
-    margin-top: 25%;
+    margin-top: 15%;
     border:solid 1px #02153d;
     border-radius: 30px;
     transition: 0.2s;
