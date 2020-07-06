@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans',sans-serif;
     padding: 0;
@@ -15,7 +19,7 @@ body {
 
 .header {
     /*background-color:#000500;*/
-    background: rgb(2, 21, 61);
+    background: #02153d;
     /*background: linear-gradient(180deg, rgba(40,104,240,1) 0%, rgba(172,195,245,0.9808298319327731) 100%);*/
     color:#fff;
     overflow: hidden;
@@ -42,9 +46,28 @@ body {
 
 .nav-item {
     margin-right: 20px;
-    border: solid #fff 1px;
     padding:3px 7px;
-    border-radius: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color:white;
+    font-size: large;
+    transition:0.2s;
+}
+
+.nav a:hover {
+    background-color: #f1f1f1;
+    padding:5px 8px;
+    color:#111;
+    cursor: pointer;
+}
+
+.main-img {
+    position: absolute;
+    top:2%;
+    transform: scale(0.6);
+    left:60%;   
 }
 
 .major-text {
@@ -71,7 +94,7 @@ body {
 
 .logo img{
     width: 50px;
-    height: 4opx;
+    height: 50px;
 }
 .t {
     color:#3f3d56
@@ -145,12 +168,21 @@ body {
     color:#fff;
     font-weight: 100;
     margin-bottom: 5%;
+    transition: 0.2s;
+}
+
+.call-to-action button:hover {
+    background-color: #fff;
+    color:#111;
+    border:solid 1px #111;
+    cursor: pointer;
 }
 
 #section2 {
     display: flex;
     justify-content: center;
     background: #f4f4f4;
+    padding-bottom: 100px;
 }
 
 .upload-form img{
@@ -177,30 +209,80 @@ body {
     margin-top: 8%;
 }
 
-.footer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background:#111;
-    color:#fff;
+.form input::-webkit-file-upload-button:hover {
+    cursor: pointer;
 }
 
-.footer a{
+.submit-btn {
+    padding:10px 20px;
+    font-size: 20px;
+    margin-top: 25%;
+    border:solid 1px #02153d;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #02153d;
+    color:#fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #02153d;
+    color:#fff;
+    font-size: 20px;
+}
+
+footer a {
     text-decoration: none;
     color:#fff;
 }
 
-.footer ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+footer img {
+    width: 30px;
+    height: 30px;
 }
 
-.footer img{
-    height: 30px;
-    width:30px;
+.footer-container {
+    width: 80%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contact {
+    display:flex;
+    flex-direction:column;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
     margin-bottom: 5px;
 }
 
-.footer small {
-    margin-top:-15%;
+.social-media {
+    margin-top:15px;
+}
+
+.social-media > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social-media > div img {
+    margin-left:-60%;
+}
+
+.copyright {
+    font-size: 20px;
+    margin-left:70%;
+    display: flex;
+}
+
+.copyright span {
+    display: flex;
 }
