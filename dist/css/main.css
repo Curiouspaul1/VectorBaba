@@ -276,6 +276,9 @@ footer {
     padding:20px;
 }
 
+.mobile-header,.mob-nav {
+    display: none;
+}
 
 @media (max-width: 940px) {
     .header {
@@ -289,5 +292,74 @@ footer {
     }
     #how-it-works h1{
         width: 80%;
+    }
+    .mobile-header{
+        display: block;
+        background-color: #02153d;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: #fff;
+    }
+    .mobile-header .logo {
+        position: absolute;
+        top:1;
+        left:1;
+    }
+
+    #Closemenu {
+        width: 40px;
+        height: 40px;
+        float: right;
+        clear: both;
+        display: none;
+    }
+
+    #Openmenu {
+        float: right;
+    }
+
+    .mob-nav {
+        background-color: #02153d;
+        position: absolute;
+        top:0;
+        width: 55%;
+        height: 100vh;
+        z-index:200;
+        transition: 0.3s ease-in-out;
+        transform: translateX(-500px);
+    }
+
+    .mob-nav ul {
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+    }
+
+    .mob-nav a {
+        text-decoration: none;
+        color:#fff;
+        font-size:25px;
+        margin:0;
+    }
+    .mob-nav li {
+        margin-bottom:50px;
+    }
+
+    .footer {
+       height: min-content;
+       margin:0;
+       margin-top:-20%;
+       color:#fff;
+       padding:5% 0 0 5%;
+       border-top:solid #fff 0.5px;
+    }
+
+    .footer a {
+        font-size:14px;
     }
 }

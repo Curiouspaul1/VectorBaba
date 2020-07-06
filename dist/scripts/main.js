@@ -1,23 +1,26 @@
-var file,reader = new FileReader();
+const openBtn = document.getElementById('Openmenu');
+const menu = document.getElementById('mob-nav');
+const close_ = document.getElementById('Closemenu');
+openBtn.addEventListener('click',(e)=>{
+  openBtn.style.display = 'None';
+  menu.style.transition = '0.3s ease-in-out';
+  menu.style.display = 'block';
+  menu.style.transform = 'translateX(0px)';
+  close_.style.display = 'block';
 
-  // Upload the file to Google Drive
-  reader.onloadend = function(e) {
-    google.script.run
-      .withSuccessHandler(showMessage)
-      .uploadFileToGoogleDrive(
-         e.target.result, file.name,
-         $('input#name').val(),
-         $('input#email').val()
-      );
-  };
+});
 
-  // Read the file on form submit
-  function submitForm() {
-    file = $('#file')[0].files[0];
-    showMessage("Uploading file..");
-    reader.readAsDataURL(file);
-  }
+close_.addEventListener('click',()=>{
+  close_.style.display = 'None';
+  openBtn.style.display = 'block';
+  menu.style.transform = 'translateX(-500px)'
+});
 
-  function showMessage(e) {
-    $('#progress').html(e);
-  }
+const navs = document.getElementsByClassName('nav-item');
+for(let i = 0; i < navs.length; i++){
+  navs[i].addEventListener('click',()=>{
+    close_.style.display = 'None';
+    openBtn.style.display = 'block';
+    menu.style.transform = 'translateX(-500px)'
+  });
+}
