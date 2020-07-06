@@ -146,6 +146,19 @@ body {
     font-weight: 100;
 }
 
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
 .form {
-    
+    background: #f4f4f4;
+    padding:0 20%;
+    border-radius: 20px;
+}
+
+.form form {
+    border: dashed #555 1px;
+    padding:0 100%;
+    border-radius: 15px;
 }
