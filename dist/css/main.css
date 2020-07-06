@@ -74,7 +74,7 @@ body {
     width: 90%;
     margin:0 auto;
     display: grid;
-    gap:15%;
+    gap:12%;
     grid-template-columns: 30% 70%;
 }
 
