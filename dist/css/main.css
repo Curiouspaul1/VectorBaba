@@ -203,8 +203,8 @@ body {
 }
 
 .upload-field{
-    padding:15px 20px;
-    width: 40vw;
+    padding:20px 26px;
+    width: 60vw;
     background:#f4f4f4;
     margin:0 0 5% 0;
     border-radius: 10px;
@@ -241,7 +241,7 @@ body {
 .submit-btn {
     padding:10px 20px;
     font-size: 20px;
-    margin-top: 15%;
+    margin-top: 5%;
     border:solid 1px #02153d;
     border-radius: 30px;
     transition: 0.2s;
@@ -256,7 +256,7 @@ body {
 .copyright {
     font-size: 20px;
     display: flex;
-    color:#fff;
+    color:#FFCA3A;
 }
 
 .copyright span {
@@ -266,6 +266,7 @@ body {
 .contact {
     width: 80%;
     margin:0 auto;
+    color:#FFCA3A;
 }
 
 .contact-container {
@@ -279,7 +280,7 @@ body {
 
 .contact-container a {
     text-decoration: none;
-    color:#000;
+    color:#FFCA3A;
     font-size:20px;
 }
 
@@ -295,7 +296,7 @@ body {
 }
 
 footer {
-    background-color: #02153d;
+    background-color: #111;
     display:flex;
     justify-content: center;
     padding:20px;
