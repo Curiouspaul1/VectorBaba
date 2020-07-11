@@ -112,7 +112,7 @@
                 <div class="price-img"><img src="img/undraw_Savings_dwkw.svg" alt=""></div>
                 <div class="content">
                     <div class="price"><h2 id="teal">Simple Images: $2+</h2></div>
-                    <div class="price"><h2 id="blue">Detailed Images: $6-$16</h2></div>
+                    <div class="price"><h2 id="blue">Detailed Images: $6+</h2></div>
                     <div class="price"><h2 id="yellow">Complex Images: $16+</h2></div>
                 </div>
             </div>
@@ -121,18 +121,15 @@
             </div>
         </section>
         <section id="section2">
-            <!--<div class="form">
-                <div class="main-text"><h1>Upload your Image</h1></div>
-                <form action="" class="upload-form">
-                    <input type="text" placeholder="First Name" class="upload-field">
-                    <input type="text" placeholder="Last Name" class="upload-field">
-                    <input type="text" placeholder="Email Address" class="upload-field">
-                    <img src="img/upload-64.png" alt="">
-                    <input type="file" name="upload" id="" id="upload-field">
-                    <input type="submit" class="submit-btn" value="Upload File">
-                </form>
-            </div>-->
-            <iframe src="https://script.google.com/macros/s/AKfycbw_-no8Mrrac1JwsLwb-y72BVPD4VMLYpqR2sVlAc1D1inooFQ/exec" frameborder="0"></iframe>
+            <div class="form">
+                <div class="main-text"><h1>Upload your Image</h1></div>                
+                <iframe id="upload-form" src="https://script.google.com/macros/s/AKfycbw_-no8Mrrac1JwsLwb-y72BVPD4VMLYpqR2sVlAc1D1inooFQ/exec" frameborder="0"></iframe>
+            </div>
+            <!--<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                <input type="text" id="firstnameField" name="firstnameField" placeholder="First Name" class="upload-field">
+                <input type="text" id="lastnameField" name="lasttnameField" placeholder="Last Name" class="upload-field">
+                <input type="text" id="emailField" name="emailField" placeholder="Email Address" class="upload-field">
+            </form>-->
         </section>
 
         <section id="section3" class="contact">
@@ -148,7 +145,8 @@
     
     <footer>
         <div class="copyright">
-            <span>Copyright &copy; Outline House Media Pvt. Ltd</span><br>
+            <span>Copyright &copy; Outline House Media Pvt Ltd.</span><br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
