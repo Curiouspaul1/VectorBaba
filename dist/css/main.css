@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -81,6 +81,7 @@ body {
 .major-text h1 {
     margin: 0;
     font-size: 3rem;
+    font-weight:800;
     width: 120%;
 }
 
