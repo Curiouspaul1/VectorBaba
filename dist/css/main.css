@@ -205,7 +205,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #FFCA3A;
-    height: 90vh;
+    height: 100vh;
 }
 
 .upload-field{
@@ -258,7 +258,7 @@ body {
 .form iframe {
     margin-top:5%;
     width:80vw;
-    height: 35rem;
+    height: 40rem;
     background-color: transparent;
 }
 
