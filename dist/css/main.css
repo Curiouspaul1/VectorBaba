@@ -377,11 +377,15 @@ footer {
         top:-15rem;
     }
 
+    #section2 {
+        max-height: 100vh;
+        overflow: scroll;
+    }
+
     #section2 iframe {
         margin-top:5%;
-        width:80%;
-        height: 30rem;
-        background-color: transparent
+        height: 35rem;
+        background-color: transparent;
     }
 
     .contact-container {
