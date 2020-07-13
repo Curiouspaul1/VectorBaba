@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -81,7 +81,6 @@ body {
 .major-text h1 {
     margin: 0;
     font-size: 3rem;
-    font-weight:800;
     width: 120%;
 }
 
@@ -378,11 +377,15 @@ footer {
         top:-15rem;
     }
 
+    #section2 {
+        max-height: 100vh;
+        overflow: scroll;
+    }
+
     #section2 iframe {
         margin-top:5%;
-        width:80%;
-        height: 30rem;
-        background-color: transparent
+        height: 35rem;
+        background-color: transparent;
     }
 
     .contact-container {
