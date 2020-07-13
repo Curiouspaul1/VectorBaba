@@ -35,7 +35,6 @@ const nextBtn = document.querySelector('#nextBtn');
 //counter
 let count = 1;
 const size = images[0].clientWidth;
-console.log(size);
 carousel.style.transform = 'translateX(' + (-size * count) + 'px)';
 carousel.style.width = size + 'px';
 
