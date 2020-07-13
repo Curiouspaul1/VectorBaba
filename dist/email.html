@@ -2,44 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=	, initial-scale=1.0">
-    <title>New Upload</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-        * {
-            box-sizing:border-box;
-            font-family: 'Open sans',sans-serif;
-        }
-        .container {
-            width:60%;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
-            padding:3% 4%;
-            border-radius: 10;
-            box-shadow: 0 8px 20px #ffffff15;
-        }
-        ul {
-            list-style-type: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>VectorBaba</title>
 </head>
 <body>
+
     <div class="container">
-        <div class="header"><h1>New Upload</h1></div>
-        <div class="info">
-            <div class="info-header"><h2>Client's Details</h2></div>
-            <div class="info-body">
-                <ul>
-                    <li>Name:</li>
-                    <li>Email:</li>
-                    <li>Comments:</li>
-                    <li>Filename:</li>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                    <h2>VectorBaba</h2>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#section1">How it Works</a></li>
+                    <li class="nav-item"><a href="#section2">Get A Quote</a></li>
+                    <li class="nav-item"><a href="#section3">Contact Us</a></li>
+                    <li class="nav-item"><a href="#pricing">Pricing</a></li>
                 </ul>
             </div>
+
+            <div class="major-text">
+                <div class="desc">
+                    <h1>Create Quality <br> Vectorized Images</h1>
+                    <p>
+                        VectorBaba gives you the best quality of vectorization and cartooning, you could possibly imagine. Customizations at your fingertips.
+                    </p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="img/Portfolio template5-01.jpg" alt="" id="lastClone">
+                        <img src="img/Portfolio template14-01.jpg" alt="">
+                        <img src="img/Portfolio template12-01.jpg" alt="">
+                        <img src="img/Portfolio template11-01.jpg" alt="">
+                        <img src="img/Portfolio template5-01.jpg" alt="">
+                        <img src="img/Portfolio template6-01.jpg" alt="">
+                        <img src="img/Portfolio template8-01.jpg" alt="">
+                        <img src="img/Portfolio template1-01.jpg" alt="">
+                        <img src="img/Portfolio template10-01.jpg" alt="">
+                        <img src="img/Portfolio template14-01.jpg" alt="" id="firstClone">
+                        <!--<div class="controls">
+                            <button id="prevBtn"><img src="img/caret-back-circle-outline.svg" alt="" srcset=""></button>
+                            <button id="nextBtn"><img src="img/caret-forward-circle-outline.svg" alt=""></button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!--<div class="main-img">
+                <img src="img/Asset 140.png" alt="">
+            </div>-->
         </div>
+
+        <div class="mobile-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <h3>VectorBaba</h3>
+            </div>
+            <div class="hamburger">
+                <img src="img/icons8-menu-64.png" alt="" id="Openmenu">
+            </div>
+        </div>
+
+        <div class="mob-nav" id="mob-nav">
+            <img src="img/icons8-close-window-40.png" alt="" id="Closemenu">
+            <ul>
+                <li class="nav-item"><a href="#section1">How it Works</a></li>
+                <li class="nav-item"><a href="#section2">Get A Quote</a></li>
+                <li class="nav-item"><a href="#section3">Contact Us</a></li>
+                <li class="nav-item"><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="footer">Icons By <a href="">ICons8.com</a></div>
+        </div>
+        <!-- SlidesShoq-->
+        <section id="slideshow">
+            
+        </section>
+        <!-- How it works -->
+        <section id="section1">
+            <div id="how-it-works"><h1>How it Works</h1></div>
+            <div class="how-it-works">
+                <div class="how how-green" id="upload">
+                    <img src="img/upload.png" alt="" class="how-img">
+                    <h3>Upload</h3>
+                    <p>
+                        Simply upload an image, of format such as jpg or png. Size must be 5mb or less.
+                    </p>
+                </div>
+    
+                <div class="how how-red" id="vectorize">
+                    <img src="img/illustrator-80.png" alt="" class="how-img">
+                    <h3>Vectorize</h3>
+                    <p>
+                        Seat back and relax while VectorBaba handles the vectorization process.
+                    </p>
+                </div>
+    
+                <div class="how how-blue" id="deliver">
+                    <img src="img/send-file-64.png" alt="" class="how-img">
+                    <h3>Deliver</h3>
+                    <p>
+                        Have the vectorized image delivered to you, once the process has been completed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h1 id="pricing-header">Pricing</h1>
+            <div class="pricing-content">
+                <div class="price-img"><img src="img/undraw_Savings_dwkw.svg" alt=""></div>
+                <div class="content">
+                    <div class="price"><h2 id="teal">Simple Images: $2+</h2></div>
+                    <div class="price"><h2 id="blue">Detailed Images: $6+</h2></div>
+                    <div class="price"><h2 id="yellow">Complex Images: $16+</h2></div>
+                </div>
+            </div>
+            <div class="call-to-action">
+                <a href="#section2"><button onclick="">Get Your Quote</button></a>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="form">
+                <div class="main-text"><h1>Upload your Image</h1></div>                
+                <iframe id="upload-form" src="https://script.google.com/macros/s/AKfycbw_-no8Mrrac1JwsLwb-y72BVPD4VMLYpqR2sVlAc1D1inooFQ/exec" frameborder="0"></iframe>
+                <!--<h2>File format: PNG, BMP, JPEG ( max file size: 5MB )</h2>-->
+            </div>
+            <!--<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                <input type="text" id="firstnameField" name="firstnameField" placeholder="First Name" class="upload-field">
+                <input type="text" id="lastnameField" name="lasttnameField" placeholder="Last Name" class="upload-field">
+                <input type="text" id="emailField" name="emailField" placeholder="Email Address" class="upload-field">
+            </form>-->
+        </section>
+
+        <section id="section3" class="contact">
+            <div class="contact-header"><h1>Contact Us</h1></div>
+            <div class="contact-container">
+                <div><a href="https://www.facebook.com/vectorbaba07"><img src="img/icons8-facebook-64.png" alt=""> Facebook</a></div>
+                <div><a href=""><img src="img/icons8-instagram-64.png" alt=""> Instagram</a></div>
+                <div><a href="https://wa.me/918208733395"><img src="img/icons8-whatsapp-64.png" alt=""> WhatsApp</a></div>
+                <div><a href=""><img src="img/icons8-email-64.png" alt=""> Email: vectorbaba07@gmail.com</a></div>
+            </div>
+        </section>
     </div>
+    
+    <footer>
+        <div class="copyright">
+            <span>Copyright &copy; Outline House Media Pvt Ltd.</span><br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
